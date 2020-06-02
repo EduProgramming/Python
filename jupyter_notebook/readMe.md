@@ -1,7 +1,8 @@
 # Jupyter Notebook
 
-00. Markdown문법
-
-01. 출력문, Print
-
+0. Markdown문법
+1. 출력문, Print
 02. 변수, Variable
+3. number 자료형
+4. str 자료형
+
