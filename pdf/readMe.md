@@ -7,3 +7,5 @@
 4. Str 자료형
 5. Bool 자료형
 6. Operator, 연산자
+7. List 자료형
+8. Tuple 자료형
