@@ -9,3 +9,4 @@
 6. Operator, 연산자
 7. List 자료형
 8. Tuple 자료형
+9. Dict 자료형
