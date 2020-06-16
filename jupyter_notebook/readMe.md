@@ -45,3 +45,7 @@
 
 
 ## Pandas
+
+31. pandas_intro
+32. 
+
