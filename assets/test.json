@@ -1,0 +1,7 @@
+{
+    "response": "json",
+    "code": 200,
+    "result": {
+        "data": "읽기 성공"
+    }
+}
