@@ -136,7 +136,20 @@ Numpy axis(축)에 대해서 알아봅시다.
 
 ### 22. Numpy_element
 
-배열의 원소를 정렬, 추가, 제거, 사칙연산, 관련 함수를 사용해봅시다.
+배열의 원소를 정렬, 추가, 제거, 사칙연산을 사용해봅시다.
+
+
+### 23. Numpy_reshape_indexing
+
+배열 shape 변경과 인덱싱&슬라이싱에 대해서 알아봅시다.
+
+
+### 24. Numpy_copy_stack
+
+배열의 얕은 복사, 깊은 복사, 쌓기, 분리하기에 대해서 알아봅시다.
+
+
+### 25. Numpy_operator
 
 >**관련 함수**
 >
@@ -150,12 +163,21 @@ Numpy axis(축)에 대해서 알아봅시다.
 >8. matmul(): 행렬곱
 
 
+### 26. Numpy_random
 
-### 23. Numpy_reshape_indexing
-
-배열 shape 변경과 인덱싱&슬라이싱에 대해서 알아봅시다.
-
+난수 생성
 
 
+### 27. Numpy_transpose
+
+전치 행렬
 
 
+### 28. Numpy_flatten
+
+배열 평탄화 작업
+
+
+### 29. Numpy_object_save_load
+
+Numpy 객체 저장과 불러오기
