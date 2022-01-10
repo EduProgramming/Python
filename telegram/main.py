@@ -40,4 +40,4 @@ def send_message(message_type, value=''):
 def index():
     return 'Test'
 
-app.run(host=os.getenv('IP','localhost'), port=int(os.getenv('PORT', 5000)))
+app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 5000)))

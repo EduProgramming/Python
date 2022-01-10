@@ -254,3 +254,23 @@ HTTPS 인증서 있는 URL주소로만 가능
     }
 }
 ```
+
+
+
+```bash
+$ ps -fA | grep python
+TaeJune+      51       1  0 02:24 pts/1498 00:00:00 grep python
+
+$ kill 1
+
+# 해당 프로세서들을 다 죽임
+$ kill -9 $(ps -A | grep python | awk '{print $1}')
+```
+
+## KAKAO DEVELOPERS API
+
+```bash
+$ pip install python-decouple
+```
+
+API TOKEN 숨기기 위해 사용(`.env`파일)
