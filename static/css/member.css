@@ -48,6 +48,14 @@
   margin-bottom: 0;
 }
 
+#login-btn:hover {
+  background-color: #2d994c;
+}
+
+#login-btn:focus {
+  background-color: #318749;
+}
+
 .login-callout {
   font-size: 14px;
   padding: 1rem 1rem;
@@ -60,4 +68,25 @@
 .login-callout > a {
   color: #0969da;
   text-decoration: none;
+}
+
+#join-btn {
+  width: 100%;
+  font-family: 400;
+  padding: 0.375rem 0.75rem;
+  background-color: transparent;
+  border: 2px solid #2da44e;
+  border-radius: 0.375rem;
+  margin-top: 0.5rem;
+  line-height: 1.25rem;
+}
+
+#join-btn:hover {
+  color: white;
+  background-color: #2da44e;
+}
+
+#join-btn:focus {
+  color: white;
+  background-color: #318749;
 }
