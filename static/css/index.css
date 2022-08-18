@@ -32,6 +32,10 @@ main > a {
   color: #0969da;
 }
 
+main > a:hover {
+  color: #1d5aa0;
+}
+
 .toggle-dark-container {
   position: absolute;
   top: 2rem;
