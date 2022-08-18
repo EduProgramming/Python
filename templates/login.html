@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN | FLASK</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/login.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="login-container">
+          <div class="login-logo">
+            <img src="../static/login_logo.svg" alt="" />
+            <h1>Sign in to Flask</h1>
+          </div>
+          <div class="login-form">
+            <form action="/login" method="post">
+              <label for="user-id">User ID</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="user-id"
+                  id="user-id"
+                  placeholder="ID를 작성해주세요."
+                />
+              </div>
+              <label for="user-pwd">Password</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  name="user-pwd"
+                  id="user-pwd"
+                  placeholder="비밀번호를 작성해주세요."
+                />
+              </div>
+              <input type="submit" id="login-btn" value="LOGIN" />
+            </form>
+          </div>
+          <div class="login-callout">
+            <span>New to Flask?</span>
+            <a href="#">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
