@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIKES | FLASK</title>
+    <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/likes.css">
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <main>
+        <span class="material-icons large-font" id="like">
+          favorite_border
+        </span>
+        <!-- Jinja2 문법을 사용하여 likes값 처리
+          TODO: 고급적으로 가기 위해서는 API 통신 방법으로 처리하는 기법 알아둬야함
+          무조건적 요소는 아니지만 코드의 결속이 생기기에...
+        -->
+        <span class="large-font" id="like-counter">
+          {{ likes }}
+        </span>
+      </main>
+      <div class="toggle-dark-container">
+        <img
+          src="../static/light.svg"
+          id="toggle-dark-btn"
+          alt="toggle dark button"
+        />
+      </div>
+      </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="../static/js/index.js"></script>
+      <script>
+      document
+        .getElementById("like")
+        .addEventListener("click", ({ target }) => {
+          const likeCounter = document.getElementById('like-counter')
+          const url = "/likes";
+          let data = {};
+          axios
+            .post(url, (data = data))
+            .then(({ data }) => {
+              if (data === 'None') {
+                target.innerText = 'favorite'
+                likeCounter.innerText = parseInt(likeCounter.innerText) + 1;
+              } else {
+                target.innerText = 'favorite_border'
+                likeCounter.innerText = parseInt(likeCounter.innerText) -1;
+              }
+            })
+            .catch(err => {
+              console.error(err)
+            });
+        });
+    </script>
+  </body>
+</html>
