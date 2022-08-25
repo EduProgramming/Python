@@ -8,8 +8,6 @@ Client - Server - DB
 - Server: Flask Framework
 - DB: PostgreSQL
 
-
-
 ## install
 
 ```bash
@@ -23,26 +21,23 @@ $ pip install psycopg2 # PostgreSQL 연결 라이브러리
 >
 > 배포용으로 생각한다면 빌드된 패키지인 psycopg2를 권장드립니다.
 
-
 ## 수업중 시간상 못다룬 내용
 
 1. Material UI ICON
 
 ```html
 <!-- CDN 추가 -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
 
 <!-- Favorite Icon -->
 <!-- 선만 있는 하트 -->
-<span class="material-icons">
-    favorite_border
-</span>
+<span class="material-icons"> favorite_border </span>
 
 <!-- 채워진 하트 -->
-<span class="material-icons">
-    favorite
-</span>
+<span class="material-icons"> favorite </span>
 ```
 
 공식적으로 들어갔던 Material 사이트에서 나온 방식과는 다르게 해당 방안을 진행해야 되었습니다.
@@ -60,7 +55,17 @@ def close():
     conn.close()
 ```
 
+## REST-API
 
+```bash
+$ pip install flask_restx
+```
+
+## CORS ERROR 해결법
+
+```bash
+$ pip install flask_cors
+```
 
 ### 참고내용
 
