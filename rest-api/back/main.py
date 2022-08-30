@@ -7,7 +7,7 @@ app = Flask(__name__)
 # CORS(app, resources={r'특정라우터': {'origins': '특정도메인'}})
 CORS(app, resources={r'*': {'origins': '*'}})
 
-api = Api(app, version='1.0', title='Swagger Docs', description='Flask REST API Documentation', doc='/api-docs')
+api = Api(app, version='1.0', title='Swagger Docs', description='Flask REST API Documentation', doc='/')
 
 users = api.namespace('users', description='User Data API')
 likes = api.namespace('likes', description='Likes Data API')
@@ -32,7 +32,12 @@ class Users(Resource):
 @likes.route('')
 class Likes(Resource):
     def get(self):
-        return 'Likes Data'
+        dummy_user_data = [
+            {
+                'user_id': 1,
+            },
+        ]
+        return dummy_user_data
 
 if __name__ == '__main__':
     app.run(host='localhost', debug=True)
