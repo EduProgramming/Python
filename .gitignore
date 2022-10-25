@@ -565,3 +565,5 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudio
 
 secret.json
+chromedriver.exe
+.env
