@@ -1,0 +1,47 @@
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+}
+
+main > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+main > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0969da;
+}
+
+main > a:hover {
+  color: #1d5aa0;
+}
+
+.toggle-dark-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#toggle-dark-btn {
+  width: 3rem;
+}

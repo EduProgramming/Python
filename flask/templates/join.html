@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOIN | FLASK</title>
+    <link
+      rel="shortcut icon"
+      href="../static/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/member.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="login-container">
+          <div class="login-logo">
+            <img src="../static/logo.svg" alt="" />
+            <h1>Sign up to Flask</h1>
+          </div>
+          <div class="login-form">
+            <form action="/join" method="post">
+              <label for="user-id">User ID</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="user-id"
+                  id="user-id"
+                  placeholder="ID를 작성해주세요."
+                  required
+                />
+              </div>
+              <label for="user-pwd">Password</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  name="user-pwd"
+                  id="user-pwd"
+                  placeholder="비밀번호를 작성해주세요."
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <label for="user-re-pwd">Reconfirm Password</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  name="user-re-pwd"
+                  id="user-re-pwd"
+                  placeholder="비밀번호를 작성해주세요."
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            </form>
+            <button id="join-btn">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../static/js/join.js"></script>
+  </body>
+</html>
